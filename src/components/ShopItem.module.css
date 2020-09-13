@@ -1,0 +1,41 @@
+/*
+Поидее можно с флекс-ордером заморочиться, но нахрена я тогда столько компонентов наплодил... поменяю порядок в разметке
+*/
+
+.shopItem {
+  height: 100px;
+  margin-bottom: 2px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopItem img {
+  margin-left: 20px;
+  height: 100px;
+}
+
+.shopItem h2 {
+  text-transform: uppercase;
+}
+
+.shopItem__color {
+  color: #555;
+}
+
+.shopItem__price {
+  color: #d54c44;
+  font-size: large;
+}
+
+.shopItem a {
+  font-size: small;
+  font-weight: bold;
+  color: #d54c44;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid #d54c44;
+  border-radius: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,50 @@
+.shopCard {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 35px;
+  box-shadow: 1px 10px 10px 1px #bbb;
+}
+
+.shopCard img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+}
+
+.shopCard__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopCard__wrapper h2 {
+  text-transform: uppercase;
+}
+
+.shopCard__wrapper > span {
+  color: #555;
+}
+
+.shopCard__footer {
+  margin-top: 160px;
+  width: 80%;
+  color: #d54c44;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.shopCard__footer span {
+  font-size: large;
+}
+
+.shopCard__footer a {
+  font-size: small;
+  font-weight: bold;
+  color: #d54c44;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid #d54c44;
+  border-radius: 20px;
+}
