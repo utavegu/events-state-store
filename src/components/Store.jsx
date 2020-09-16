@@ -36,15 +36,14 @@ function Store() {
     img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/5.jpg"
   }];
 
-  const [iconState, iconSetState] = useState({view: "view_list"});
+  const [viewState, viewSetState] = useState({view: "view_list"});
 
-  const onSwitch = (evt) => {
-    if (evt.currentTarget.innerText === "view_list") iconSetState({view: "view_module"});
-    else iconSetState({view: "view_list"});
+  const onSwitch = () => {
+    (viewState.view === "view_list") ? viewSetState({view: "view_module"}) : viewSetState({view: "view_list"});
   }
 
   const changeDisplay = () => {
-    if (iconState.view === "view_list") {
+    if (viewState.view === "view_list") {
       return (
       <CardsView 
         cards = {products}
@@ -63,7 +62,7 @@ function Store() {
   return (
     <>
       <IconSwitch
-        icon = {iconState.view}
+        icon = {viewState.view}
         onSwitch = {onSwitch}
       />
 
